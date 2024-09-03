@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pesquisas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> <!-- Plugin para exibir os números -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="buttons-container">
+            <button id="add-table">Adicionar Tabela</button>
+            <button id="update-charts">Atualizar Gráficos</button>
+            <button id="save-chart">Salvar Gráfico</button>
+        </div>
+
+        <div id="tables-container"></div>
+
+        <div id="charts-container">
+            <canvas id="combinedBarChart"></canvas>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
